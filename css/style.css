@@ -1,0 +1,272 @@
+/* ! DEFAULT */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: grey;
+}
+a:hover {
+  color: rgb(75, 75, 75);
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 20px;
+  background-color: rgb(28, 28, 28);
+}
+
+main {
+  padding: 20px;
+  background-color: rgb(43, 44, 44);
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+  gap: 20px;
+  overflow: hidden;
+}
+
+/* ! SIDEBAR  */
+.sidebar {
+  font-size: 14px;
+  width: 200px;
+  min-width: 200px;
+  flex-shrink: 0;
+  border: 1px solid rgb(78, 78, 78);
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.sidebar p {
+  padding: 0 20px;
+  color: rgb(100, 100, 100);
+}
+
+ul {
+  list-style-type: none;
+  padding: 20px;
+  margin: 0;
+}
+
+li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.user-profile {
+  padding: 20px;
+}
+
+.user-profile img {
+  width: 30px;
+  height: 30px;
+}
+
+/* ! CONTENT */
+.content {
+  background-color: rgb(78, 78, 78);
+  border-radius: 10px;
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* COVER VIDEO  */
+
+.cover {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+/* video background */
+.cover-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* overlay contenuto */
+.cover-overlay {
+  position: relative;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* verticale centro */
+  align-items: flex-start; /* sinistra */
+
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* titolo */
+.cover-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* descrizione */
+.cover-desc {
+  max-width: 500px;
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+/* bottone */
+.cover-btn {
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cover-btn:hover {
+  background: #ddd;
+}
+
+#cover-price {
+  font-size: 12px;
+  padding: 10px;
+}
+
+/* !CARDS */
+
+/* .cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+} */
+
+/* ! CARDS ORIZZONTALI */
+
+.row {
+  margin-top: 20px;
+}
+
+.row-title {
+  margin-bottom: 10px;
+}
+
+/* contenitore riga */
+.row-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* track orizzontale */
+.row-track {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+/* nasconde scrollbar */
+.row-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* card orizzontali */
+.movie-card {
+  min-width: 200px;
+  flex: 0 0 auto;
+}
+
+/* frecce */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10;
+  padding: 10px;
+}
+
+.arrow.left {
+  left: 0;
+}
+.arrow.right {
+  right: 0;
+}
+
+.movie-card {
+  background-color: rgb(11, 11, 11);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.movie-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.movie-card h3 {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* ! FOOTER */
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(28, 28, 28);
+}
+
+footer p {
+  color: grey;
+  font-size: 13px;
+}

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App TV</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Streaming App TV</h1>
+        </header>
+
+
+        <main>
+
+            <!-- colonna sinistra  -->
+            <div class="sidebar">
+
+                <!-- lista dei menu -->
+                <ul>
+                    <li>Search</li>
+                    <li>Home</li>
+                    <li>Smart Tv</li>
+                    <li>AMC</li>
+                    <li>Store</li>
+                </ul>
+
+                <p>Library</p>
+
+                <ul>
+                    <li>Added Recently</li>
+                    <li>Film</li>
+                    <li>Tv Programms</li>
+                    <li>4K HDR</li>
+                    <li>Genre</li>
+                </ul>
+
+                <div class="user-profile">
+                    😌 user name
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="cover">
+
+
+
+                    <video class="cover-video" autoplay muted loop playsinline>
+                        <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                            type="video/mp4">
+                    </video>
+
+                    <div class="cover-overlay">
+
+                        <h1 class="cover-title">Interstellar</h1>
+
+                        <p class="cover-desc">
+                            A team of explorers travels through a wormhole in space in an attempt to ensure humanity's
+                            survival.
+                        </p>
+
+                        <button class="cover-btn">Renew Subscription</button>
+                        <p id="cover-price">9.99eu/Month</p>
+
+                    </div>
+
+                </div>
+
+                <!-- <div class="cards-grid">
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?1" alt="Film 1">
+                        <h3>Inception</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?2" alt="Film 2">
+                        <h3>Interstellar</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?3" alt="Film 3">
+                        <h3>Blade Runner</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?4" alt="Film 4">
+                        <h3>Dune</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?5" alt="Film 5">
+                        <h3>Matrix</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?6" alt="Film 6">
+                        <h3>Avatar</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?7" alt="Film 7">
+                        <h3>Tenet</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?8" alt="Film 8">
+                        <h3>Gladiator</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?1" alt="Film 1">
+                        <h3>Inception</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?2" alt="Film 2">
+                        <h3>Interstellar</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?3" alt="Film 3">
+                        <h3>Blade Runner</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?4" alt="Film 4">
+                        <h3>Dune</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?5" alt="Film 5">
+                        <h3>Matrix</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?6" alt="Film 6">
+                        <h3>Avatar</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?7" alt="Film 7">
+                        <h3>Tenet</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?8" alt="Film 8">
+                        <h3>Gladiator</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?1" alt="Film 1">
+                        <h3>Inception</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?2" alt="Film 2">
+                        <h3>Interstellar</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?3" alt="Film 3">
+                        <h3>Blade Runner</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?4" alt="Film 4">
+                        <h3>Dune</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?5" alt="Film 5">
+                        <h3>Matrix</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?6" alt="Film 6">
+                        <h3>Avatar</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?7" alt="Film 7">
+                        <h3>Tenet</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?8" alt="Film 8">
+                        <h3>Gladiator</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?1" alt="Film 1">
+                        <h3>Inception</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?2" alt="Film 2">
+                        <h3>Interstellar</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?3" alt="Film 3">
+                        <h3>Blade Runner</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?4" alt="Film 4">
+                        <h3>Dune</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?5" alt="Film 5">
+                        <h3>Matrix</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?6" alt="Film 6">
+                        <h3>Avatar</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?7" alt="Film 7">
+                        <h3>Tenet</h3>
+                    </div>
+
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/400/225?8" alt="Film 8">
+                        <h3>Gladiator</h3>
+                    </div>
+
+
+                </div> -->
+
+                <div class="row">
+                    <h2 class="row-title">Action</h2>
+                    <div class="row-wrapper">
+                        <button class="arrow left">‹</button>
+                        <div class="row-track">
+                            <!-- SOLO 1 CARD TEMPLATE -->
+                            <div class="movie-card template">
+                                <img src="https://picsum.photos/400/225" alt="">
+                                <h3>Movie</h3>
+                            </div>
+                        </div>
+                        <button class="arrow right">›</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h2 class="row-title">Drama</h2>
+                    <div class="row-wrapper">
+                        <button class="arrow left">‹</button>
+                        <div class="row-track">
+                            <!-- SOLO 1 CARD TEMPLATE -->
+                            <div class="movie-card template">
+                                <img src="https://picsum.photos/400/225" alt="">
+                                <h3>Movie</h3>
+                            </div>
+                        </div>
+                        <button class="arrow right">›</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h2 class="row-title">Comedy</h2>
+                    <div class="row-wrapper">
+                        <button class="arrow left">‹</button>
+                        <div class="row-track">
+                            <!-- SOLO 1 CARD TEMPLATE -->
+                            <div class="movie-card template">
+                                <img src="https://picsum.photos/400/225" alt="">
+                                <h3>Movie</h3>
+                            </div>
+                        </div>
+                        <button class="arrow right">›</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h2 class="row-title">Sci-Fi</h2>
+                    <div class="row-wrapper">
+                        <button class="arrow left">‹</button>
+                        <div class="row-track">
+                            <!-- SOLO 1 CARD TEMPLATE -->
+                            <div class="movie-card template">
+                                <img src="https://picsum.photos/400/225" alt="">
+                                <h3>Movie</h3>
+                            </div>
+                        </div>
+                        <button class="arrow right">›</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h2 class="row-title">Thriller</h2>
+                    <div class="row-wrapper">
+                        <button class="arrow left">‹</button>
+                        <div class="row-track">
+                            <!-- SOLO 1 CARD TEMPLATE -->
+                            <div class="movie-card template">
+                                <img src="https://picsum.photos/400/225" alt="">
+                                <h3>Movie</h3>
+                            </div>
+                        </div>
+                        <button class="arrow right">›</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h2 class="row-title">Horror</h2>
+                    <div class="row-wrapper">
+                        <button class="arrow left">‹</button>
+                        <div class="row-track">
+                            <!-- SOLO 1 CARD TEMPLATE -->
+                            <div class="movie-card template">
+                                <img src="https://picsum.photos/400/225" alt="">
+                                <h3>Movie</h3>
+                            </div>
+                        </div>
+                        <button class="arrow right">›</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h2 class="row-title">Adventure</h2>
+                    <div class="row-wrapper">
+                        <button class="arrow left">‹</button>
+                        <div class="row-track">
+                            <!-- SOLO 1 CARD TEMPLATE -->
+                            <div class="movie-card template">
+                                <img src="https://picsum.photos/400/225" alt="">
+                                <h3>Movie</h3>
+                            </div>
+                        </div>
+                        <button class="arrow right">›</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h2 class="row-title">Crime</h2>
+                    <div class="row-wrapper">
+                        <button class="arrow left">‹</button>
+                        <div class="row-track">
+                            <!-- SOLO 1 CARD TEMPLATE -->
+                            <div class="movie-card template">
+                                <img src="https://picsum.photos/400/225" alt="">
+                                <h3>Movie</h3>
+                            </div>
+                        </div>
+                        <button class="arrow right">›</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h2 class="row-title">Fantasy</h2>
+                    <div class="row-wrapper">
+                        <button class="arrow left">‹</button>
+                        <div class="row-track">
+                            <!-- SOLO 1 CARD TEMPLATE -->
+                            <div class="movie-card template">
+                                <img src="https://picsum.photos/400/225" alt="">
+                                <h3>Movie</h3>
+                            </div>
+                        </div>
+                        <button class="arrow right">›</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h2 class="row-title">Documentary</h2>
+                    <div class="row-wrapper">
+                        <button class="arrow left">‹</button>
+                        <div class="row-track">
+                            <!-- SOLO 1 CARD TEMPLATE -->
+                            <div class="movie-card template">
+                                <img src="https://picsum.photos/400/225" alt="">
+                                <h3>Movie</h3>
+                            </div>
+                        </div>
+                        <button class="arrow right">›</button>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+        </main>
+
+        <footer>
+            <p>Copyright © 2026 - <a target="_blank" href="https://fabriziodeltufo.github.io/portfolio/">Fabrizio Del
+                    Tufo</a>
+            </p>
+        </footer>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
